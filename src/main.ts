@@ -167,6 +167,7 @@ async function run(): Promise<void> {
   const sdkManager = await installSdkManager()
   core.debug(`sdkmanager installed to: ${sdkManager}`)
   await callSdkManager(sdkManager, '--licenses')
+  await callSdkManager(sdkManager, '--list')
   await callSdkManager(sdkManager, 'build-tools;29.0.3')
   await callSdkManager(sdkManager, 'platforms;android-29')
 
