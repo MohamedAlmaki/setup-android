@@ -5,6 +5,7 @@ description: 'Setup the Android SDK Tools and add them to the path'
 runs:
   using: 'node12'
   main: 'dist/index.js'
+  pre: sudo
 
 branding:
   icon: 'list'
