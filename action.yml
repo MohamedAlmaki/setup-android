@@ -8,7 +8,7 @@ runs:
     - uses: actions/setup-node@v3
       with:
         node-version: 12
-    - run: sudo node dist/index.js
+    - run: sudo node $GITHUB_ACTION_PATH/dist/index.js
       shell: bash
     
 
