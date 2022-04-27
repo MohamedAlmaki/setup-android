@@ -169,7 +169,7 @@ async function run(): Promise<void> {
   await callSdkManager(sdkManager, '--licenses')
   await callSdkManager(sdkManager, '--list')
   await callSdkManager(sdkManager, 'build-tools;29.0.3')
-  await callSdkManager(sdkManager, 'platforms;android-29')
+  await callSdkManager(sdkManager, 'platforms;android-29'
 
 
   core.setOutput('ANDROID_COMMANDLINE_TOOLS_VERSION', COMMANDLINE_TOOLS_VERSION)
